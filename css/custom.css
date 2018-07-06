@@ -1,0 +1,246 @@
+*{
+	list-style-type: none;
+	text-decoration: none;
+	color: black;
+}
+html{
+	height: 100%;
+}
+button{
+	height: 46px;
+	width: 129px;
+	border: none;
+	font-weight: bold;
+	background-color: black;
+	color: white;
+}
+button:hover{
+	border: 2px solid grey;
+
+}
+body{
+	font-family: sans-serif;
+	background-size: 100%;
+	background-color: #f3f3f3;
+	margin:0px;
+	padding: 0px;
+	margin-top: 73px;
+	min-width: 300px;
+}
+
+.topNav{
+	background-color: white;
+	padding: 13px 0px;
+	display: flex;
+	flex-wrap: wrap;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+#brand{
+	flex: 1;
+	padding-top: 8px;
+	padding-left: 40px;
+}
+#menu{
+	flex: 5;
+
+}
+#rmenu{
+	flex:1;
+	margin-right: : 0px;
+	padding-right: 10px;
+	justify-content: flex-end;
+	
+}
+#menu button{
+	background-color: white;
+	border: none;
+
+}
+#menu button:hover{
+	background-color: #f2f2f2;
+	transition: 0.4s;
+}
+#sn {
+	background-color: orangered;
+	color: white;
+	border: none;
+}
+#sn1 {
+	background-color: orangered;
+	color: white;
+	border: none;
+}
+#sn:hover , #sn1:hover{
+	border: 3px solid darkorange;
+	transition: 0.3s;
+}
+#slider{
+	background-image: url(../images/main.jpg);
+	background-position: center;
+	background-size: 100% 120%;
+	background-repeat: no-repeat;
+	height: 100%;
+	min-height: 461px;
+	min-width: 300px;
+
+}
+
+.bt button{
+	background-color: transparent;
+	border: 3px solid grey;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.bt button:hover{
+	border: 3px solid white;
+}
+#gr{
+	font-size: 6pt;
+	color: #e0b745;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+.slText{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+	padding-top: 3%;
+}
+#bmns{
+	font-size: 35pt;
+	color: white;
+	font-weight: bold;
+	line-height: 1em;
+	margin-top: 5px;
+	margin-bottom: 4%;
+	padding-bottom: 1%;
+}
+.bt{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	margin: 1%;
+}
+.row1{
+	max-width: 1400px;
+	margin: 40px 3% 40px 4%;
+	display: flex;
+	height: 300px;
+	min-width: 85%;
+
+}
+.panel{
+	padding: 20px;
+	margin-bottom: 20px;
+	flex: 1;
+	margin-right: 2%;
+	background-color: grey;	
+	background-position: center;
+	max-height: 80%;
+	min-width: 20%;
+	max-width: 100%;
+
+
+}
+#p1{
+	background-image: url(../images/meet.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+#p2{
+	background-image: url(../images/rev.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+#p3{
+	background-image: url(../images/quiz.jpg);	
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	
+}
+#p1:hover,#p2:hover,#p3:hover{
+	transition: 6s;
+	background-size: 110% 110%;
+	border: 1px solid	red;
+}
+.row2{
+	margin: 40px 50px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+}
+#r2txt{
+
+	padding-left: 10px;
+	margin-top: -150px;
+	width: 40%;
+	min-width: 40%;
+	font-size: 21px;
+}
+
+p{
+	font-size: 14pt;
+}
+i{
+	width:5px;
+	padding-top: 8px;
+	position: absolute;
+	visibility: hidden;
+	padding-left: 10px;
+	cursor: pointer;
+
+}
+
+span{
+	padding-top: 7px;
+	border-top: 6px solid orange;
+}
+@media (max-width: 1140px){
+	#r2txt{
+		margin: auto;
+		width: 100%;
+	}
+	#rmenu{
+		flex: 2;
+		
+	}
+	.row1{
+		height: 260px;
+	}
+	.panel{
+		height: 60%;
+	}
+	#menu button{
+		display: none;
+	}
+
+	i{	
+		visibility: visible;
+		position: static;
+	}
+}
+@media(max-width: 857px){
+	#rmenu{
+		flex: 1;
+	}
+	#sn{
+		display: none;
+	}
+	.topNav{
+		padding: 6px 0px;
+	}
+	body{
+		margin-top: 55px;
+	}
+	.row1{
+		flex-direction: column;
+		height: 990px;
+	}
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>dropdown</title>
+	<meta charset="utf-8">
+	<meta class="viewport" content-type="width=device-width initial-scale=1">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/custom.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="topNav">
+		<div id="brand">
+			<img src="images/logo.jpg" height="30px">
+		</div>
+		<div id="menu">
+				<button><a href="#">Boards</li></a></button>
+				<button><a href="#">Accessories</li></a></button>
+				<button><a href="#">Community</li></a></button>
+				<button><a href="#">Support</li></a></button>
+
+
+		</div>
+
+		<div id="rmenu">
+			<button type="submit" id="sn">Shop Now</button>
+			<i class="fas fa-bars"style="font-size:24px" onclick="toggleClass()"></i>
+		</div>
+	</div>
+	<div class="whole" id="whole-div">
+			<a href="#">a</a>
+			<a href="#">a</a>
+			<a href="#">a</a>
+			<a href="#">a</a>
+			<a href="#">a</a>
+			<a href="#">a</a>
+			<a href="#">a</a>
+	</div>
+	<script>
+		function toggleClass() {
+			el = document.getElementById('whole-div');
+			if (el.className=="whole") {
+				el.className="active"
+			}else{
+				el.className="whole"
+			}
+		}
+
+	</script>
+</body>
+</html>

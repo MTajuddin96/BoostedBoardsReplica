@@ -1,0 +1,16 @@
+.active{
+	transition: 1s;
+	display: flex;
+	flex-direction: column;
+	padding: 4% 5%;
+	overflow: hidden;
+	background: #000;
+}
+.active a{
+	width: 90%;
+	padding: 2%;
+	padding-right: 50px;
+	border-bottom: 1px solid grey;
+	color: white; 
+	overflow: hidden;
+}
